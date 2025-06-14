@@ -1,4 +1,4 @@
-# 2025-free-flask-hosting - Darmowe platformy hostingu Flask w 2025
+# 2025-free-flask-hosting - Darmowe platformy hostingu Flask
 
 - Era hojnego darmowego hostingu Flask dobiegła końca?
 
