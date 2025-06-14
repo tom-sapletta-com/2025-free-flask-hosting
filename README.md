@@ -2,8 +2,12 @@
 
 - Era hojnego darmowego hostingu Flask dobiegła końca?
 
-Krajobraz darmowego hostingu dla aplikacji Flask uległ drastycznym zmianom w 2024-2025 roku. 
+Krajobraz darmowego hostingu dla aplikacji Flask uległ drastycznym zmianom w 2024-2025 roku.
 Wiele głównych platform wyeliminowało darmowe poziomy lub całkowicie zaprzestało działalności. **Z 15 zbadanych platform, tylko 5 oferuje prawdziwie użyteczne darmowe opcje dla aplikacji Flask.**
+
+## Kontekst: Koniec ery darmowego hostingu
+
+W listopadzie 2022 [Heroku zakończyło darmowy tier](https://www.techtarget.com/searchsoftwarequality/news/252524336/Heroku-to-end-free-tiers-creating-platform-void-for-devs), co wywołało masową migrację deweloperów. [Railway wyeliminowało 500 godzin darmowego hostingu](https://blog.railway.com/p/introducing-trial-hobby-pro-plans), a [Fly.io przeszło na model pay-as-you-go](https://www.srvrlss.io/blog/fly-io-pay-as-you-go/) w 2024 roku.
 
 ## Tabela porównawcza - najlepsze darmowe opcje
 
@@ -17,39 +21,39 @@ Wiele głównych platform wyeliminowało darmowe poziomy lub całkowicie zaprzes
 
 ## Platformy BEZ darmowych planów w 2025
 
-**Heroku:** Wyeliminował darmowy poziom w listopadzie 2022 (minimum $5/miesiąc)
-**Railway:** Tylko $5 kredytu próbnego, brak stałego darmowego planu
-**Fly.io:** Wyeliminował darmowy poziom w październiku 2024
-**Deta:** Całkowicie zamknięty w październiku 2024
-**DigitalOcean App Platform:** Darmowy poziom tylko dla stron statycznych
+**[Heroku](https://www.spendflo.com/blog/heroku-pricing-guide):** Wyeliminował darmowy poziom w listopadzie 2022 (minimum $5/miesiąc)  
+**[Railway](https://railway.com/pricing):** Tylko $5 kredytu próbnego, [brak stałego darmowego planu](https://docs.railway.com/reference/pricing/free-trial)  
+**[Fly.io](https://www.srvrlss.io/blog/fly-io-pay-as-you-go/):** Wyeliminował darmowy poziom w październiku 2024  
+**Deta:** [Całkowicie zamknięty w październiku 2024](https://github.com/orgs/walinejs/discussions/2704)  
+**[DigitalOcean App Platform](https://www.digitalocean.com/pricing/app-platform):** Darmowy poziom tylko dla stron statycznych
 
 ## Szczegółowa analiza najlepszych opcji
 
-### 1. Google Cloud Run - najlepsza dla produkcji
+### 1. [Google Cloud Run](https://cloud.google.com/run) - najlepsza dla produkcji
 
 **Zalety:**
 - **Prawdziwie darmowy** - bez wygaśnięcia po 12 miesiącach
 - Automatyczne skalowanie do zera (płacisz tylko za wykorzystanie)
 - **Najhojniejsze limity**: 2 miliony requestów miesięcznie
-- Doskonała integracja Git przez Cloud Build
+- Doskonała integracja Git przez [Cloud Build](https://cloud.google.com/build)
 - Bezpłatne SSL i własne domeny
 - Automatyczne kontenery z kodu źródłowego
 
 **Ograniczenia:**
-- Brak darmowej zarządzanej bazy PostgreSQL (Cloud SQL od ~$7/miesiąc)
+- Brak darmowej zarządzanej bazy PostgreSQL ([Cloud SQL od ~$7/miesiąc](https://cloud.google.com/sql/pricing))
 - Wymaga podstawowej znajomości Docker/kontenerów
 - Architektura bezstanowa (nie dla aplikacji wymagających trwałego storage)
 
 **Idealny dla:** Aplikacji API, mikrousług, aplikacji portfolio z zewnętrzną bazą danych
 
-### 2. PythonAnywhere - najlepsze dla początkujących
+### 2. [PythonAnywhere](https://www.pythonanywhere.com/pricing/) - najlepsze dla początkujących
 
 **Zalety:**
 - **Prawdziwie zawsze włączone** - bez trybu uśpienia
 - Dedykowane środowisko Python z preinstalowanymi pakietami
-- Interfejs webowy do zarządzania
+- [Interfejs webowy do zarządzania](https://help.pythonanywhere.com/pages/Flask/)
 - Wbudowana integracja MySQL
-- Doskonała dokumentacja Python/Flask
+- [Doskonała dokumentacja Python/Flask](https://machinelearningprojects.net/deploy-a-flask-app-online/)
 
 **Ograniczenia:**
 - Tylko 512MB miejsca na dysku
@@ -59,13 +63,13 @@ Wiele głównych platform wyeliminowało darmowe poziomy lub całkowicie zaprzes
 
 **Idealny dla:** Nauki Flask, projektów osobistych, prostych aplikacji webowych
 
-### 3. Render - najlepsza równowaga funkcji
+### 3. [Render](https://render.com/pricing) - najlepsza równowaga funkcji
 
 **Zalety:**
 - **750 godzin miesięcznie** (wystarczy na 24/7 dla jednej aplikacji)
-- Darmowa baza PostgreSQL przez pierwsze 90 dni
+- [Darmowa baza PostgreSQL przez pierwsze 90 dni](https://dashdashhard.com/posts/ultimate-guide-to-renders-free-tier/)
 - Własne domeny z bezpłatnym SSL
-- Doskonała integracja GitHub/GitLab
+- [Doskonała integracja GitHub/GitLab](https://testdriven.io/blog/flask-render-deployment/)
 - Szczegółowe logi i metryki
 
 **Ograniczenia:**
@@ -75,13 +79,13 @@ Wiele głównych platform wyeliminowało darmowe poziomy lub całkowicie zaprzes
 
 **Idealny dla:** Projektów portfolio, aplikacji demo, prototypów z własną domeną
 
-### 4. Koyeb - najlepsze dla aplikacji działających 24/7
+### 4. [Koyeb](https://www.koyeb.com/pricing) - najlepsze dla aplikacji działających 24/7
 
 **Zalety:**
 - **Aplikacje nigdy nie śpią** na darmowym planie
 - 512MB RAM, 2GB SSD storage
-- 5 własnych domen w darmowym planie
-- Proste wdrażanie przez GitHub
+- [5 własnych domen w darmowym planie](https://www.koyeb.com/docs/compare/render-vs-koyeb)
+- [Proste wdrażanie przez GitHub](https://www.koyeb.com/docs/deploy/flask)
 - Deployment w Europie i USA
 
 **Ograniczenia:**
@@ -93,16 +97,16 @@ Wiele głównych platform wyeliminowało darmowe poziomy lub całkowicie zaprzes
 
 ## Chmurowe opcje enterprise
 
-### AWS (Elastic Beanstalk + Lambda)
+### [AWS](https://aws.amazon.com/) (Elastic Beanstalk + Lambda)
 
-**Elastic Beanstalk** (12 miesięcy):
+**[Elastic Beanstalk](https://aws.amazon.com/elasticbeanstalk/details/)** (12 miesięcy):
 - 750 godzin t2.micro miesięcznie
 - Najłatwiejsze wdrażanie Flask (`eb deploy`)
-- Darmowa baza RDS PostgreSQL
-- Doskonała dokumentacja
+- [Darmowa baza RDS PostgreSQL](https://aws.amazon.com/rds/free/)
+- [Doskonała dokumentacja](https://docs.aws.amazon.com/elasticbeanstalk/)
 
-**Lambda** (permanentnie):
-- 1 milion requestów miesięcznie
+**[Lambda](https://aws.amazon.com/lambda/)** (permanentnie):
+- [1 milion requestów miesięcznie](https://cloudchipr.com/blog/aws-lambda-pricing)
 - Architektura serverless
 - Integracja z API Gateway
 
@@ -118,45 +122,45 @@ Wiele głównych platform wyeliminowało darmowe poziomy lub całkowicie zaprzes
 ## Rekomendacje według przypadków użycia
 
 ### Projekty osobiste/nauka
-1. **PythonAnywhere** - najprostsze w użyciu, zawsze włączone
-2. **Render** - jeśli potrzebujesz własnej domeny
-3. **Koyeb** - jeśli aplikacja musi być zawsze dostępna
+1. **[PythonAnywhere](https://www.pythonanywhere.com/)** - najprostsze w użyciu, zawsze włączone
+2. **[Render](https://render.com/)** - jeśli potrzebujesz własnej domeny
+3. **[Koyeb](https://www.koyeb.com/)** - jeśli aplikacja musi być zawsze dostępna
 
 ### Portfolio/demo
-1. **Render** - własne domeny + dobre narzędzia deweloperskie
-2. **Google Cloud Run** - profesjonalne rozwiązanie na CV
-3. **Koyeb** - dla aplikacji bez bazy danych
+1. **[Render](https://render.com/)** - własne domeny + dobre narzędzia deweloperskie
+2. **[Google Cloud Run](https://cloud.google.com/run)** - profesjonalne rozwiązanie na CV
+3. **[Koyeb](https://www.koyeb.com/)** - dla aplikacji bez bazy danych
 
 ### Małe aplikacje komercyjne (prototypy)
-1. **Google Cloud Run** - najlepsza skalowalność
-2. **AWS Lambda** - architektura serverless
-3. **Render** → upgrade do płatnego planu po 90 dniach
+1. **[Google Cloud Run](https://cloud.google.com/run)** - najlepsza skalowalność
+2. **[AWS Lambda](https://aws.amazon.com/lambda/)** - architektura serverless
+3. **[Render](https://render.com/)** → upgrade do płatnego planu po 90 dniach
 
 ### Aplikacje wymagające bazy danych
-1. **PythonAnywhere** - MySQL wbudowany
-2. **AWS Elastic Beanstalk** - darmowa PostgreSQL przez 12 miesięcy
-3. **Render** - PostgreSQL przez 90 dni
+1. **[PythonAnywhere](https://www.pythonanywhere.com/)** - MySQL wbudowany
+2. **[AWS Elastic Beanstalk](https://aws.amazon.com/elasticbeanstalk/)** - darmowa PostgreSQL przez 12 miesięcy
+3. **[Render](https://render.com/)** - PostgreSQL przez 90 dni
 
 ## Konfiguracja deployment - najlepsze praktyki
 
 ### Najprostsze wdrażanie
-1. **PythonAnywhere**: Upload plików przez interface webowy
-2. **Render**: Połącz GitHub → automatyczne deployment
-3. **Railway** (płatny): `git push` deployment
+1. **[PythonAnywhere](https://help.pythonanywhere.com/pages/Flask/)**: Upload plików przez interface webowy
+2. **[Render](https://render.com/docs/deploy-flask)**: Połącz GitHub → automatyczne deployment
+3. **[Railway](https://docs.railway.com/guides/flask)** (płatny): `git push` deployment
 
 ### Requirements.txt - wsparcie
 **Wszystkie platformy** obsługują `requirements.txt`, ale różnią się czasem instalacji:
-- **Najszybsze**: PythonAnywhere (preinstalowane pakiety)
-- **Średnie**: Render, Koyeb
-- **Najwolniejsze**: Cloud Run (budowa kontenera)
+- **Najszybsze**: [PythonAnywhere](https://www.pythonanywhere.com/) (preinstalowane pakiety)
+- **Średnie**: [Render](https://render.com/), [Koyeb](https://www.koyeb.com/)
+- **Najwolniejsze**: [Cloud Run](https://cloud.google.com/run) (budowa kontenera)
 
 ## Monitorowanie i logi
 
 ### Najlepsze narzędzia monitorowania (darmowy plan)
-1. **Google Cloud Run**: Cloud Logging (50GB/miesiąc)
-2. **Render**: Szczegółowe metryki w czasie rzeczywistym
-3. **AWS**: CloudWatch Logs (5GB)
-4. **PythonAnywhere**: Podstawowe logi przez interface webowy
+1. **[Google Cloud Run](https://cloud.google.com/run)**: [Cloud Logging](https://cloud.google.com/logging) (50GB/miesiąc)
+2. **[Render](https://render.com/)**: Szczegółowe metryki w czasie rzeczywistym
+3. **[AWS](https://aws.amazon.com/)**: [CloudWatch Logs](https://aws.amazon.com/cloudwatch/) (5GB)
+4. **[PythonAnywhere](https://www.pythonanywhere.com/)**: Podstawowe logi przez interface webowy
 
 ## Najważniejsze wnioski dla 2025
 
@@ -178,4 +182,18 @@ Dla użytkowników Vercel z problemami:
 - **Jeśli potrzebujesz własnej domeny**: Render
 - **Jeśli aplikacja musi być zawsze włączona**: Koyeb
 - **Jeśli planujesz skalowanie**: Google Cloud Run
+
+Era hojnego darmowego hostingu Flask dobiegła końca. 
+
+W 2025 roku deweloperzy Flask mają znacznie mniej opcji darmowego hostingu niż wcześniej. 
+Najlepszym wyborem dla większości projektów będzie **Google Cloud Run** dla aplikacji produkcyjnych lub **PythonAnywhere** dla projektów edukacyjnych. 
+Render pozostaje doskonałą opcją dla portfolio, a Koyeb dla aplikacji wymagających stałej dostępności.
+Deweloperzy powinni być gotowi na przejście na płatne plany (od $5/miesiąc) lub hybrydowe rozwiązania łączące statyczny hosting z funkcjami serverless.
+
+## Przydatne zasoby
+
+- [Lista alternatyw Heroku na GitHub](https://github.com/meanands/heroku-free-alternatives)
+- [Kompletny przewodnik po Render](https://dashdashhard.com/posts/ultimate-guide-to-renders-free-tier/)
+- [Wdrażanie Flask na różnych platformach](https://blog.back4app.com/heroku-alternatives/)
+- [Porównanie platform hostingowych 2025](https://signoz.io/comparisons/heroku-alternatives/)
 
